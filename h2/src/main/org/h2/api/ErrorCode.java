@@ -2104,9 +2104,9 @@ public class ErrorCode {
      * the maximum capacity specified using the system property 
      * <code>h2.maxGroupByEntries</code>.
      */
-    public static final int GROUP_BY_TABLE_TOO_LARGE = 90147;
+    public static final int GROUP_BY_TABLE_TOO_LARGE = 90151;
 
-    // next is 90148
+    // next is 90152
 
     private ErrorCode() {
         // utility class
