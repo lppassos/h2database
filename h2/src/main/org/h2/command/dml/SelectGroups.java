@@ -96,7 +96,7 @@ public abstract class SelectGroups {
             }
             Object[] values = groupByData.get(currentGroupsKey);
             if (values == null) {
-                if (SysProperties.MAX_GROUP_BY_ENTRIES>0 && groupByData.size()>SysProperties.MAX_GROUP_BY_ENTRIES) {
+                if (SysProperties.MAX_GROUP_BY_ENTRIES>0 && groupByData.size()>=SysProperties.MAX_GROUP_BY_ENTRIES) {
                     throw DbException.get(ErrorCode.GROUP_BY_TABLE_TOO_LARGE);
                 }
                 values = createRow();
